@@ -1,0 +1,3 @@
+CREATE  TABLE CosecBank.users ( idusers INT NOT NULL ,  name VARCHAR(45) NULL ,  surname VARCHAR(45) NULL ,  password VARCHAR(45) NULL ,  PRIMARY KEY (idusers) );
+ALTER TABLE CosecBank.users CHANGE COLUMN name name TEXT NULL DEFAULT NULL , CHANGE COLUMN surname surname TEXT NULL DEFAULT NULL  , CHANGE COLUMN password password TEXT NULL DEFAULT NULL  ;
+insert into CosecBank.users values (100,"Jhon","Williams","passJhon");
